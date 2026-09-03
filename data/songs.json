@@ -1,0 +1,35 @@
+{
+    "song_links":[
+        {
+            "id": 1,
+            "title": "Yeshanagula (From 'The Paradise') (Telugu)",
+            "artist": ["Anirudh Ravichander","Singer Prabha","Jangi Reddy","Kasarla Shyam"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02fcc7545ad48e61651ae3c1f9"
+        },
+        {
+            "id": 2,
+            "title": "Radhimaa - From 'Think Indie'",
+            "artist": ["Sai Abhyankkar","Nargis Teji","Asma Teji","Vivek"],
+            "link": "https://i.scdn.co/image/ab67616d00001e0224a93a0b07380c034f7d9d74"
+        },
+        {
+            "id": 3,
+            "title": "IYKYK",
+            "artist": ["Jxggi","Dishant","Sickboi"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02baf43c5433ef41254203332d"
+        },
+        {
+            "id": 4,
+            "title": "Jamaican (Bam Bam)",
+            "artist": ["HUGEL","SOLTO(FR)"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02450a730dd72f3bf49882ae9d"
+        },
+        {
+            "id": 5,
+            "title": "Tera Naam Doon (From 'Enternainment')",
+            "artist": ["Sachin-Jigar","Atif Aslam","Shalmali Kholgade","Priya Saraiya"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02c91bb395f9808216c3a9c99a"
+        }
+
+    ]
+}

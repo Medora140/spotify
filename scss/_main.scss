@@ -10,6 +10,10 @@
     flex-direction: column;
     @include scroll;
 
+
+    min-width: 0;
+    width: 100%;
+
     .nav {
         gap: 0 33rem;
         display: flex;
@@ -19,7 +23,13 @@
 
     .songs {
         width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
+
+        // .nav {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: space-between;
+        // }
 
         .nav-head {
             margin: 0;
@@ -30,8 +40,15 @@
         }
 
         #songs-list {
+            width: 100%;
+            min-width: 0;
             display: flex;
-            gap: 36px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+
+
+            gap: 2rem;
 
             overflow-x: auto;
             overflow-y: hidden;
@@ -43,8 +60,8 @@
                 width: 230px;
 
                 .song-image {
-                    width: 230px;
-                    height: 230px;
+                    width: 200px;
+                    height: 200px;
 
                     object-fit: cover;
                     border-radius: 8px;
@@ -60,9 +77,9 @@
 
                     color: white;
 
-                    display: -webkit-box;
+                    // display: -webkit-box;
                     // -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
+                    // -webkit-box-orient: vertical;
                     overflow: hidden;
                 }
 
@@ -74,9 +91,9 @@
 
                     color: #aaa;
 
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
+                    // display: -webkit-box;
+                    // -webkit-line-clamp: 2;
+                    // -webkit-box-orient: vertical;
                     overflow: hidden;
                 }
             }

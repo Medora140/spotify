@@ -228,11 +228,61 @@
 .main::-webkit-scrollbar-thumb:hover {
   background: rgb(229.5, 229.5, 229.5);
 }
+.main {
+  min-width: 0;
+  width: 100%;
+}
 .main .nav {
   gap: 0 33rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.main .songs {
+  width: 100%;
+}
+.main .songs .nav-head {
+  margin: 0;
+}
+.main .songs .nav-text {
+  margin: 0;
+}
+.main .songs #songs-list {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+}
+.main .songs #songs-list .song-card {
+  flex: 0 0 230px;
+  width: 230px;
+}
+.main .songs #songs-list .song-card .song-image {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.main .songs #songs-list .song-card .song-title {
+  margin: 12px 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+  color: white;
+  overflow: hidden;
+}
+.main .songs #songs-list .song-card .song-artist {
+  margin: 8px 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #aaa;
+  overflow: hidden;
 }
 
 .footer {
