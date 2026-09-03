@@ -1,0 +1,30 @@
+{
+    "radio_links":[
+        {
+            "id": 1,
+            "title": "By Spotify",
+            "link": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+        },
+        {
+            "id": 2,
+            "title": "With Pritam, Shankar-Ehsaan-Loy, Roop Kumar Rathod and more",
+            "link": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB"
+        },
+        {
+            "id": 3,
+            "title": "With Atif Aslam, A.R. Rahman, Shankar-Ehsaan-Ly and more",
+            "link": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en"
+        },
+        {
+            "id": 4,
+            "title": "With Vinod Rathod, Kumar Sanu, Udit Narayan and more",
+            "link": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en"
+        },
+        {
+            "id": 5,
+            "title": "With Karan Aujla, Harrdy Sandhu, AP Dhillon and more",
+            "link": "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en"
+        }
+
+    ]
+}
