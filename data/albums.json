@@ -1,0 +1,35 @@
+{
+    "album_links":[
+        {
+            "id": 1,
+            "title": "Yeh Jawaani Hai Deewani",
+            "artist": ["Pritam"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4"
+        },
+        {
+            "id": 2,
+            "title": "Snam Teri Kasam (Original Motion Picture Soundtrack)",
+            "artist": ["Himesh Reshammiya","Sameer Anjaan","Subrat Sinha"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02711c1639b4bc0f9978ae77a6"
+        },
+        {
+            "id": 3,
+            "title": "Finding Her",
+            "artist": ["Kushagra","Bharath","Saaheal"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02292341cd3e621d7f9171331f"
+        },
+        {
+            "id": 4,
+            "title": "Young G.O.A.T",
+            "artist": ["Cheema Y","Gur Sidhu"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02a5183fa4b99bcec1f506418d"
+        },
+        {
+            "id": 5,
+            "title": "Making Memories",
+            "artist": ["Karan Aujla","Ikky"],
+            "link": "https://i.scdn.co/image/ab67616d00001e02bf6c7c24a33a49a5c2f0d423"
+        }
+
+    ]
+}

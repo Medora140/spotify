@@ -12,10 +12,17 @@ app.use(express.static(__dirname));
 const songs = JSON.parse(
     fs.readFileSync("data/songs.json", "utf-8")
 );
+const artists = JSON.parse(
+    fs.readFileSync("data/artists.json", "utf-8")
+);
 
 app.get("/api/songs", (req, res) => {
 
     res.json(songs);
+})
+app.get("/api/artists", (req, res) => {
+
+    res.json(artists);
 })
 
 app.listen(3000, () => {

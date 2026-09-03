@@ -1,45 +1,12 @@
-.main {
-    height: 75vh;
-    background: linear-gradient(135deg, #252525, #010101);
-    overflow-x: hidden;
-    overflow-y: auto;
-    color: white;
-    padding: 1rem;
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    @include scroll;
-
-
-    min-width: 0;
+.artist{
     width: 100%;
 
-    .nav {
-        gap: 0 33rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    .songs {
-        width: 100%;
-        // overflow: hidden;
 
-        // .nav {
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: space-between;
-        // }
 
-        .nav-head {
-            margin: 0;
-        }
 
-        .nav-text {
-            margin: 0;
-        }
 
-        #songs-list {
+    #artist-list {
             width: 100%;
             min-width: 0;
             display: flex;
@@ -52,25 +19,25 @@
 
             overflow-x: auto;
             overflow-y: hidden;
-
-            padding: 20px 0;
             @include scroll;
 
-            .song-card {
+            padding: 20px 0;
+
+            .artist-card {
                 flex: 0 0 230px;
                 width: 230px;
 
-                .song-image {
+                .artist-image {
                     width: 200px;
                     height: 200px;
 
                     object-fit: cover;
-                    border-radius: 8px;
+                    border-radius: 25rem;
 
                     display: block;
                 }
 
-                .song-title {
+                .artist-name {
                     margin: 12px 0 0;
 
                     font-size: 20px;
@@ -84,7 +51,7 @@
                     overflow: hidden;
                 }
 
-                .song-artist {
+                .artist-bio {
                     margin: 8px 0 0;
 
                     font-size: 17px;
@@ -99,5 +66,7 @@
                 }
             }
         }
-    }
+
+
+
 }

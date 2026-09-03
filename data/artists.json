@@ -1,0 +1,35 @@
+{
+    "artist_links":[
+        {
+            "id": 1,
+            "name": "Pritam",
+            "title": "Artist",
+            "link": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+        },
+        {
+            "id": 2,
+            "name": "A.R. Rahman",
+            "title": "Artist",
+            "link": "https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+        },
+        {
+            "id": 3,
+            "name": "Arijit Singh",
+            "title": "Artist",
+            "link": "https://i.scdn.co/image/ab67616100005174adfb0b2df04b77e43b5f7375"
+        },
+        {
+            "id": 4,
+            "name": "Sachin Jigar",
+            "title": "Artist",
+            "link": "https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e"
+        },
+        {
+            "id": 5,
+            "name": "Vishal-Shekhar",
+            "title": "Artist",
+            "link": "https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+        }
+
+    ]
+}
