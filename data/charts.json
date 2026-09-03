@@ -1,0 +1,25 @@
+{
+    "charts_links":[
+        {
+            "id": 1,
+            "title": "Your weekly update of the most played tracks right now - Global.",
+            "link": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Your weekly update of the most played tracks right now - India.",
+            "link": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Your daily update of the most played tracks right now - Global.",
+            "link": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Your daily update of the most played tracks right now - India.",
+            "link": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+        }
+
+    ]
+}

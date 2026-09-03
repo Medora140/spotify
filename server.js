@@ -21,6 +21,9 @@ const albums = JSON.parse(
 const radio = JSON.parse(
     fs.readFileSync("data/radio.json", "utf-8")
 );
+const charts = JSON.parse(
+    fs.readFileSync("data/charts.json", "utf-8")
+);
 
 app.get("/api/songs", (req, res) => {
 
@@ -37,6 +40,10 @@ app.get("/api/albums", (req, res) => {
 app.get("/api/radio", (req, res) => {
 
     res.json(radio);
+})
+app.get("/api/charts", (req, res) => {
+
+    res.json(charts);
 })
 
 app.listen(3000, () => {
