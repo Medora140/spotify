@@ -1,10 +1,15 @@
 $primary-color: black;
 $secondary-color: #cccccc;
+$btn-color: #1abc54;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@mixin transition-ease{
+    transition: all 0.3s ease-in-out;
 }
 
 @mixin button-style {
