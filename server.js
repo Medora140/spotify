@@ -15,6 +15,9 @@ const songs = JSON.parse(
 const artists = JSON.parse(
     fs.readFileSync("data/artists.json", "utf-8")
 );
+const albums = JSON.parse(
+    fs.readFileSync("data/albums.json", "utf-8")
+);
 
 app.get("/api/songs", (req, res) => {
 
@@ -23,6 +26,10 @@ app.get("/api/songs", (req, res) => {
 app.get("/api/artists", (req, res) => {
 
     res.json(artists);
+})
+app.get("/api/albums", (req, res) => {
+
+    res.json(albums);
 })
 
 app.listen(3000, () => {

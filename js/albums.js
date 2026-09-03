@@ -2,7 +2,7 @@ async function loadAlbum() {
 
     try {
 
-        const response = await fetch("/api/songs");
+        const response = await fetch("/api/albums");
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -10,46 +10,46 @@ async function loadAlbum() {
 
         const data = await response.json();
 
-        const songsContainer =
-            document.querySelector("#songs-list");
+        const albumContainer =
+            document.querySelector("#album-list");
 
-        songsContainer.innerHTML = "";
+        albumContainer.innerHTML = "";
 
-        data.song_links.forEach(song => {
+        data.album_links.forEach(album => {
 
-            const songElement =
+            const albumElement =
                 document.createElement("article");
 
-            songElement.classList.add("song-card");
+            albumElement.classList.add("album-card");
 
-            songElement.innerHTML = `
+            albumElement.innerHTML = `
                 <img
-                    class="song-image"
-                    src="${song.link}"
-                    alt="${song.title}"
+                    class="album-image"
+                    src="${album.link}"
+                    alt="${album.title}"
                 >
 
-                <h3 class="song-title">
-                    ${song.title}
+                <h3 class="album-title">
+                    ${album.title}
                 </h3>
 
-                <p class="song-artist">
-                    ${song.artist.join(", ")}
+                <p class="album-artist">
+                    ${album.artist.join(", ")}
                 </p>
             `;
 
-            songsContainer.appendChild(songElement);
+            albumContainer.appendChild(albumElement);
 
         });
 
     } catch (error) {
 
         console.error(
-            "Failed to load songs:",
+            "Failed to load albums:",
             error
         );
 
     }
 }
 
-loadSongs();
+loadAlbum();

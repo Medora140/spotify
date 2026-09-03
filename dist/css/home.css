@@ -437,6 +437,62 @@
   overflow: hidden;
 }
 
+.album {
+  width: 100%;
+}
+.album #album-list {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cccccc transparent;
+}
+.album #album-list::-webkit-scrollbar {
+  width: 6px;
+}
+.album #album-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.album #album-list::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+.album #album-list::-webkit-scrollbar-thumb:hover {
+  background: rgb(229.5, 229.5, 229.5);
+}
+.album #album-list .album-card {
+  flex: 0 0 230px;
+  width: 230px;
+}
+.album #album-list .album-card .album-image {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.album #album-list .album-card .album-title {
+  margin: 12px 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+  color: white;
+  overflow: hidden;
+}
+.album #album-list .album-card .album-artist {
+  margin: 8px 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #aaa;
+  overflow: hidden;
+}
+
 body {
   background-color: black;
   color: #cccccc;
