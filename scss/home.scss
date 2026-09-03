@@ -1,0 +1,17 @@
+@import 'config';
+@import 'nav';
+@import 'main-content';
+@import 'aside'; 
+@import 'main';   
+@import 'footer';
+@import 'sign';
+
+
+body{
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+}

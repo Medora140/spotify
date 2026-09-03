@@ -1,0 +1,35 @@
+$primary-color: black;
+$secondary-color: #cccccc;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin button-style {
+    border: none;
+    outline: none;
+}
+
+@mixin scroll {
+    scrollbar-width: thin;
+    scrollbar-color: $secondary-color transparent;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $secondary-color;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: lighten($secondary-color, 10%);
+    }
+}

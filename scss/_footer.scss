@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .head {
+        color: white;
+        font-weight: 600;
+    }
+
+    li {
+        list-style: none;
+        color: $secondary-color;
+        font-weight: lighter;
+    }
+
+    &-btns {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        .btn {
+            height: 1.9rem;
+            width: 1.9rem;
+            background: lighten($primary-color, 10%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6rem;
+            @include button-style;
+        }
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+            fill: $secondary-color;
+        }
+    }
+}
