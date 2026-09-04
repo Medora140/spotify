@@ -513,6 +513,28 @@
 .album #album-list .album-card {
   flex: 0 0 230px;
   width: 230px;
+  position: relative;
+}
+.album #album-list .album-card:hover .play {
+  opacity: 1;
+  bottom: 10rem;
+}
+.album #album-list .album-card .play {
+  background-color: #1abc54;
+  position: absolute;
+  bottom: 8rem;
+  left: 9rem;
+  border-radius: 4rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.album #album-list .album-card .play svg {
+  width: 1.8rem;
+  height: 1.5rem;
 }
 .album #album-list .album-card .album-image {
   width: 200px;
@@ -569,6 +591,28 @@
 .radio #radio-list .radio-card {
   flex: 0 0 230px;
   width: 230px;
+  position: relative;
+}
+.radio #radio-list .radio-card:hover .play {
+  opacity: 1;
+  bottom: 5rem;
+}
+.radio #radio-list .radio-card .play {
+  background-color: #1abc54;
+  position: absolute;
+  bottom: 3rem;
+  left: 9rem;
+  border-radius: 4rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.radio #radio-list .radio-card .play svg {
+  width: 1.8rem;
+  height: 1.5rem;
 }
 .radio #radio-list .radio-card .radio-image {
   width: 200px;
@@ -618,6 +662,28 @@
 .charts #charts-list .chart-card {
   flex: 0 0 215px;
   width: 230px;
+  position: relative;
+}
+.charts #charts-list .chart-card:hover .play {
+  opacity: 1;
+  bottom: 6rem;
+}
+.charts #charts-list .chart-card .play {
+  background-color: #1abc54;
+  position: absolute;
+  bottom: 4rem;
+  left: 9rem;
+  border-radius: 4rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.charts #charts-list .chart-card .play svg {
+  width: 1.8rem;
+  height: 1.5rem;
 }
 .charts #charts-list .chart-card .chart-image {
   width: 190px;

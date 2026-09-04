@@ -23,6 +23,35 @@
         .radio-card {
             flex: 0 0 230px;
             width: 230px;
+            position: relative;
+
+            &:hover {
+                .play {
+                    opacity: 1;
+                    bottom: 5rem;
+                }
+            }
+
+            .play {
+                background-color: $btn-color;
+                position: absolute;
+                bottom: 3rem;
+                left: 9rem;
+                border-radius: 4rem;
+                display: flex;
+                padding: 0.5rem;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                @include transition-ease;
+
+                svg {
+                    width: 1.8rem;
+                    height: 1.5rem;
+
+                }
+
+            }
 
             .radio-image {
                 width: 200px;
