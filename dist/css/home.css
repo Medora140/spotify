@@ -435,6 +435,28 @@
 .artist #artist-list .artist-card {
   flex: 0 0 230px;
   width: 230px;
+  position: relative;
+}
+.artist #artist-list .artist-card:hover .play {
+  opacity: 1;
+  bottom: 5rem;
+}
+.artist #artist-list .artist-card .play {
+  background-color: #1abc54;
+  position: absolute;
+  bottom: 3rem;
+  left: 9rem;
+  border-radius: 4rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.artist #artist-list .artist-card .play svg {
+  width: 1.8rem;
+  height: 1.5rem;
 }
 .artist #artist-list .artist-card .artist-image {
   width: 200px;
