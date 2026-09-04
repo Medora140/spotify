@@ -24,8 +24,12 @@
             flex: 0 0 215px;
             width: 230px;
             position: relative;
+            padding: 1rem;
 
             &:hover {
+                background-color: #252525;
+                border-radius: 1rem;
+
                 .play {
                     opacity: 1;
                     bottom: 6rem;
@@ -35,7 +39,7 @@
             .play {
                 background-color: $btn-color;
                 position: absolute;
-                bottom:4rem;
+                bottom: 4rem;
                 left: 9rem;
                 border-radius: 4rem;
                 display: flex;

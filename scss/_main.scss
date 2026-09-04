@@ -60,19 +60,22 @@
                 flex: 0 0 230px;
                 width: 230px;
                 position: relative;
+                padding: 1rem;
 
                 &:hover {
+                    background-color: #252525;
+                    border-radius: 1rem;
                     .play{
                         opacity: 1;
-                    bottom: 10rem;
+                    bottom: 12rem;
                     }
                 }
 
                 .play {
                     background-color: $btn-color;
                     position: absolute;
-                    bottom: 8rem;
-                    left: 9rem;
+                    bottom: 10rem;
+                    left: 10rem;
                     border-radius: 4rem;
                     display: flex;
                     padding: 0.5rem;

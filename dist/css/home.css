@@ -277,16 +277,21 @@
   flex: 0 0 230px;
   width: 230px;
   position: relative;
+  padding: 1rem;
+}
+.main .songs #songs-list .song-card:hover {
+  background-color: #252525;
+  border-radius: 1rem;
 }
 .main .songs #songs-list .song-card:hover .play {
   opacity: 1;
-  bottom: 10rem;
+  bottom: 12rem;
 }
 .main .songs #songs-list .song-card .play {
   background-color: #1abc54;
   position: absolute;
-  bottom: 8rem;
-  left: 9rem;
+  bottom: 10rem;
+  left: 10rem;
   border-radius: 4rem;
   display: flex;
   padding: 0.5rem;
@@ -436,6 +441,11 @@
   flex: 0 0 230px;
   width: 230px;
   position: relative;
+  padding: 1rem;
+}
+.artist #artist-list .artist-card:hover {
+  background-color: #252525;
+  border-radius: 1rem;
 }
 .artist #artist-list .artist-card:hover .play {
   opacity: 1;
@@ -514,16 +524,21 @@
   flex: 0 0 230px;
   width: 230px;
   position: relative;
+  padding: 1rem;
+}
+.album #album-list .album-card:hover {
+  background-color: #252525;
+  border-radius: 1rem;
 }
 .album #album-list .album-card:hover .play {
   opacity: 1;
-  bottom: 10rem;
+  bottom: 12rem;
 }
 .album #album-list .album-card .play {
   background-color: #1abc54;
   position: absolute;
   bottom: 8rem;
-  left: 9rem;
+  left: 10rem;
   border-radius: 4rem;
   display: flex;
   padding: 0.5rem;
@@ -592,16 +607,21 @@
   flex: 0 0 230px;
   width: 230px;
   position: relative;
+  padding: 1rem;
+}
+.radio #radio-list .radio-card:hover {
+  background-color: #252525;
+  border-radius: 1rem;
 }
 .radio #radio-list .radio-card:hover .play {
   opacity: 1;
-  bottom: 5rem;
+  bottom: 6rem;
 }
 .radio #radio-list .radio-card .play {
   background-color: #1abc54;
   position: absolute;
   bottom: 3rem;
-  left: 9rem;
+  left: 10rem;
   border-radius: 4rem;
   display: flex;
   padding: 0.5rem;
@@ -663,6 +683,11 @@
   flex: 0 0 215px;
   width: 230px;
   position: relative;
+  padding: 1rem;
+}
+.charts #charts-list .chart-card:hover {
+  background-color: #252525;
+  border-radius: 1rem;
 }
 .charts #charts-list .chart-card:hover .play {
   opacity: 1;
