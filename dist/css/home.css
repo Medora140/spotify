@@ -406,8 +406,15 @@
   background-color: whitesmoke;
 }
 .sign .music-player {
+  padding: 1rem;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0.3rem;
+  right: 0;
+  left: 0;
+  background: black;
+  color: white;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -441,7 +448,7 @@
 .sign .music-player-controls button {
   border: none;
   background: none;
-  color: white;
+  color: #cccccc;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -454,6 +461,13 @@
   width: 40px;
   height: 40px;
 }
+.sign .music-player-controls .play svg {
+  fill: black;
+}
+.sign .music-player-controls svg {
+  width: 1.2rem;
+  fill: #cccccc;
+}
 .sign .music-player-progress {
   display: flex;
   align-items: center;
@@ -463,7 +477,33 @@
   font-size: 0.75rem;
 }
 .sign .music-player-progress .progress {
-  width: 200px;
+  width: 19rem;
+  accent-color: #1abc54;
+}
+
+.system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.controls-items {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.controls-items li {
+  list-style: none;
+}
+.controls-items li svg {
+  fill: white;
+  width: 1.5rem;
+}
+.controls-items .music-player-progress .progress {
+  width: 100px;
 }
 
 .artist {
