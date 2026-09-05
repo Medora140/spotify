@@ -230,6 +230,14 @@ function createMusicPlayer(song, index) {
 
         createMusicPlayer(nextSong, currentIndex);
     });
+    prevButton.addEventListener("click", () => {
+
+        currentIndex = (currentIndex - 1 + currentSongs.length) % currentSongs.length;
+
+        const prevSong = currentSongs[currentIndex];
+
+        createMusicPlayer(prevSong, currentIndex);
+    });
 }
 
 
