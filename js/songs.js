@@ -1,4 +1,6 @@
 let currentAudio = null;
+let currentSongs = [];
+let currentIndex = 0;
 
 function formatTime(seconds) {
 
@@ -12,7 +14,8 @@ function formatTime(seconds) {
         .padStart(2, "0")}`;
 }
 
-function createMusicPlayer(song) {
+function createMusicPlayer(song, index) {
+    currentIndex = index;
     const sign = document.querySelector(".sign");
 
     const previewText =
@@ -135,6 +138,10 @@ function createMusicPlayer(song) {
     `;
     const playButton =
         player.querySelector(".play");
+    const nextButton =
+        player.querySelector(".next");
+    const prevButton =
+        player.querySelector(".previous");
 
     const progress =
         player.querySelector(".progress");
@@ -188,7 +195,7 @@ function createMusicPlayer(song) {
 
         progress.value = percentage;
         duration.textContent =
-            formatTime(currentAudio.duration-currentAudio.currentTime);
+            formatTime(currentAudio.duration - currentAudio.currentTime);
 
     });
     progress.addEventListener("input", () => {
@@ -215,6 +222,14 @@ function createMusicPlayer(song) {
             formatTime(currentAudio.duration);
 
     });
+    nextButton.addEventListener("click", () => {
+
+        currentIndex = (currentIndex + 1) % currentSongs.length;
+
+        const nextSong = currentSongs[currentIndex];
+
+        createMusicPlayer(nextSong, currentIndex);
+    });
 }
 
 
@@ -229,13 +244,14 @@ async function loadSongs() {
         }
 
         const data = await response.json();
+        currentSongs = data.song_links;
 
         const songsContainer =
             document.querySelector("#songs-list");
 
         songsContainer.innerHTML = "";
 
-        data.song_links.forEach(song => {
+        data.song_links.forEach((song, index) => {
 
             const songElement =
                 document.createElement("article");
@@ -263,7 +279,7 @@ async function loadSongs() {
 
             songsContainer.appendChild(songElement);
             songElement.addEventListener("click", () => {
-                createMusicPlayer(song);
+                createMusicPlayer(song, index);
             });
 
         });
