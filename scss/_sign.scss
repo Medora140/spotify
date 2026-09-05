@@ -92,7 +92,7 @@
         &-controls {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 2rem;
 
             button {
                 border: none;
@@ -161,11 +161,14 @@
             list-style: none;
 
             svg {
-                fill: white;
+                fill: darken($color: $secondary-color, $amount: 10%);
                 width: 1.5rem;
             }
-
-
+            &:hover{
+                svg{
+                    fill: white;
+                }
+            }
         }
 
         .music-player-progress {

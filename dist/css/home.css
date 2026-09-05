@@ -558,7 +558,7 @@
 .sign .music-player-controls {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .sign .music-player-controls button {
   border: none;
@@ -614,8 +614,11 @@
   list-style: none;
 }
 .controls-items li svg {
-  fill: white;
+  fill: rgb(178.5, 178.5, 178.5);
   width: 1.5rem;
+}
+.controls-items li:hover svg {
+  fill: white;
 }
 .controls-items .music-player-progress .progress {
   width: 100px;
