@@ -51,12 +51,12 @@
         border-radius: 5rem;
 
         &:focus-within {
-            border-color: white;
+            border-color: lighten($btn-color, 14%);;
             @include transition-ease;
         }
 
         &:hover {
-            background-color: lighten($primary-color, 14%);
+            background: linear-gradient(135deg, #156200, #010101);
             svg {
                     fill: lighten($secondary-color, 15%);
                 }

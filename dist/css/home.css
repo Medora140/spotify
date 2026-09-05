@@ -52,11 +52,11 @@
   border-radius: 5rem;
 }
 .nav_search:focus-within {
-  border-color: white;
+  border-color: rgb(57.6878504673, 227.7121495327, 118.5607476636);
   transition: all 0.3s ease-in-out;
 }
 .nav_search:hover {
-  background-color: rgb(35.7, 35.7, 35.7);
+  background: linear-gradient(135deg, #156200, #010101);
 }
 .nav_search:hover svg {
   fill: rgb(242.25, 242.25, 242.25);
@@ -154,6 +154,10 @@
   color: #cccccc;
   font-size: 1.2rem;
   font-weight: 600;
+  cursor: pointer;
+}
+.aside_top-text:hover {
+  color: rgb(229.5, 229.5, 229.5);
 }
 .aside_top-image {
   height: 1.9rem;
@@ -163,11 +167,18 @@
   justify-content: center;
   align-items: center;
   border-radius: 6rem;
+  cursor: pointer;
 }
 .aside_top-image svg {
   width: 1rem;
   height: 1rem;
   fill: #cccccc;
+}
+.aside_top-image:hover {
+  background: rgb(38.25, 38.25, 38.25);
+}
+.aside_top-image:hover svg {
+  fill: rgb(229.5, 229.5, 229.5);
 }
 .aside_main {
   display: flex;
@@ -202,6 +213,9 @@
   gap: 1rem;
   color: white;
 }
+.aside_main .item:hover {
+  background: rgb(38.25, 38.25, 38.25);
+}
 .aside_main button {
   height: 2.5rem;
   width: 9rem;
@@ -209,12 +223,24 @@
   font-weight: 800;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+.aside_main button:hover {
+  background: white;
+  font-weight: 900;
 }
 .aside_foot-items {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   gap: 1rem;
+}
+.aside_foot-items-item {
+  cursor: pointer;
+}
+.aside_foot-items-item:hover {
+  text-decoration: underline;
+  color: white;
 }
 .aside_foot .lang {
   height: 2.5rem;
@@ -227,11 +253,15 @@
   border: 1px solid white;
   background: transparent;
   color: white;
+  cursor: pointer;
 }
 .aside_foot .lang svg {
   width: 1rem;
   height: 1rem;
   fill: white;
+}
+.aside_foot .lang-hover span {
+  color: white;
 }
 .aside_foot {
   display: flex;
@@ -283,8 +313,14 @@
 .main .songs .nav-head {
   margin: 0;
 }
+.main .songs .nav-head:hover {
+  text-decoration: underline;
+}
 .main .songs .nav-text {
   margin: 0;
+}
+.main .songs .nav-text:hover {
+  text-decoration: underline;
 }
 .main .songs #songs-list {
   width: 100%;
@@ -358,12 +394,18 @@
   color: white;
   overflow: hidden;
 }
+.main .songs #songs-list .song-card .song-title:hover {
+  text-decoration: underline;
+}
 .main .songs #songs-list .song-card .song-artist {
   margin: 8px 0 0;
   font-size: 17px;
   line-height: 1.5;
   color: #aaa;
   overflow: hidden;
+}
+.main .songs #songs-list .song-card .song-artist:hover {
+  text-decoration: underline;
 }
 
 .footer {
