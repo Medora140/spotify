@@ -216,6 +216,14 @@
 .aside_main .item:hover {
   background: rgb(38.25, 38.25, 38.25);
 }
+.aside_main .item h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.aside_main .item p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .aside_main button {
   height: 2.5rem;
   width: 9rem;
@@ -240,7 +248,7 @@
 }
 .aside_foot-items-item:hover {
   text-decoration: underline;
-  color: white;
+  cursor: pointer;
 }
 .aside_foot .lang {
   height: 2.5rem;
@@ -307,20 +315,22 @@
   align-items: center;
   justify-content: space-between;
 }
+.main .nav-head:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main .nav-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .main .songs {
   width: 100%;
 }
 .main .songs .nav-head {
   margin: 0;
 }
-.main .songs .nav-head:hover {
-  text-decoration: underline;
-}
 .main .songs .nav-text {
   margin: 0;
-}
-.main .songs .nav-text:hover {
-  text-decoration: underline;
 }
 .main .songs #songs-list {
   width: 100%;
@@ -376,7 +386,7 @@
   transition: all 0.3s ease-in-out;
 }
 .main .songs #songs-list .song-card .play svg {
-  width: 1.8rem;
+  width: 1.5rem;
   height: 1.5rem;
 }
 .main .songs #songs-list .song-card .song-image {
@@ -396,6 +406,7 @@
 }
 .main .songs #songs-list .song-card .song-title:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 .main .songs #songs-list .song-card .song-artist {
   margin: 8px 0 0;
@@ -406,6 +417,7 @@
 }
 .main .songs #songs-list .song-card .song-artist:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer {
@@ -428,6 +440,10 @@
   color: #cccccc;
   font-weight: lighter;
 }
+.footer li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .footer-btns {
   display: flex;
   gap: 1rem;
@@ -444,6 +460,12 @@
   border-radius: 6rem;
   border: none;
   outline: none;
+}
+.footer-btns .btn:hover {
+  background: rgb(38.25, 38.25, 38.25);
+}
+.footer-btns .btn:hover svg {
+  fill: white;
 }
 .footer-btns svg {
   width: 1rem;
@@ -477,6 +499,14 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
+.sign-text-head:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sign-text-txt:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .sign-btn {
   height: 3.5rem;
   width: 9rem;
@@ -484,7 +514,11 @@
   font-weight: 800;
   border: none;
   outline: none;
-  background-color: whitesmoke;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.sign-btn:hover {
+  background-color: white;
 }
 .sign .music-player {
   padding: 1rem;
@@ -664,12 +698,20 @@
   color: white;
   overflow: hidden;
 }
+.artist #artist-list .artist-card .artist-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .artist #artist-list .artist-card .artist-bio {
   margin: 8px 0 0;
   font-size: 17px;
   line-height: 1.5;
   color: #aaa;
   overflow: hidden;
+}
+.artist #artist-list .artist-card .artist-bio:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .album {
@@ -747,12 +789,20 @@
   color: white;
   overflow: hidden;
 }
+.album #album-list .album-card .album-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .album #album-list .album-card .album-artist {
   margin: 8px 0 0;
   font-size: 17px;
   line-height: 1.5;
   color: #aaa;
   overflow: hidden;
+}
+.album #album-list .album-card .album-artist:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .radio {
@@ -830,6 +880,10 @@
   color: #aaa;
   overflow: hidden;
 }
+.radio #radio-list .radio-card .radio-bio:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .charts {
   width: 100%;
@@ -905,6 +959,10 @@
   line-height: 1.5;
   color: #aaa;
   overflow: hidden;
+}
+.charts #charts-list .chart-card .chart-bio:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 body {

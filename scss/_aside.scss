@@ -71,6 +71,12 @@
             &:hover {
                 background: lighten($primary-color, 15%);
             }
+            h2{
+                @include under;
+            }
+            p{
+                @include under;
+            }
         }
 
         button {
@@ -96,10 +102,7 @@
             gap: 1rem;
             &-item{
                 cursor: pointer;
-                &:hover{
-                    text-decoration: underline;
-                    color: white;
-                }
+                @include under;
             }
         }
 

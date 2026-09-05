@@ -23,7 +23,12 @@
         &-head {
             font-size: 1.2rem;
             font-weight: 600;
+            @include under;
         }
+        &-txt{
+            @include under;
+        }
+        
     }
 
     &-btn {
@@ -32,7 +37,11 @@
         border-radius: 4rem;
         font-weight: 800;
         @include button-style;
-        background-color: whitesmoke;
+        background-color: $secondary-color;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+        }
     }
 
     .music-player {

@@ -8,7 +8,14 @@ $btn-color: #1abc54;
     box-sizing: border-box;
 }
 
-@mixin transition-ease{
+@mixin under {
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@mixin transition-ease {
     transition: all 0.3s ease-in-out;
 }
 

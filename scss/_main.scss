@@ -19,32 +19,25 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &-head {
+            @include under;
+        }
+
+        &-text {
+            @include under;
+        }
     }
 
     .songs {
         width: 100%;
-        // overflow: hidden;
-
-        // .nav {
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: space-between;
-        // }
 
         .nav-head {
             margin: 0;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
 
         .nav-text {
             margin: 0;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
 
         #songs-list {
@@ -94,7 +87,7 @@
                     @include transition-ease;
 
                     svg {
-                        width: 1.8rem;
+                        width: 1.5rem;
                         height: 1.5rem;
 
                     }
@@ -121,9 +114,7 @@
 
                     overflow: hidden;
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                    @include under;
                 }
 
                 .song-artist {
@@ -136,9 +127,7 @@
 
                     overflow: hidden;
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                    @include under;
                 }
             }
         }

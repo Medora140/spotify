@@ -19,6 +19,7 @@
         list-style: none;
         color: $secondary-color;
         font-weight: lighter;
+        @include under;
     }
 
     &-btns {
@@ -36,6 +37,12 @@
             align-items: center;
             border-radius: 6rem;
             @include button-style;
+            &:hover{
+                background: lighten($primary-color, 15%);
+                svg{
+                    fill: white;
+                }
+            }
         }
 
         svg {
