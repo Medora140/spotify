@@ -14,18 +14,26 @@
 
         &-icons {
             list-style: none;
-            background-color: lighten($primary-color, 20%);
+            background-color: lighten($primary-color, 12%);
             border-radius: 50%;
             width: 2rem;
             height: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
 
             svg {
                 width: 1.5rem;
                 height: 1.5rem;
                 fill: white;
+            }
+
+            &:hover {
+                background-color: lighten($primary-color, 15%);
+                border-radius: 50%;
+                width: 2.2rem;
+                height: 2.2rem;
             }
         }
     }
@@ -35,10 +43,24 @@
         height: 100%;
         gap: 1rem;
         background-color: lighten($primary-color, 10%);
-        padding: 0.5rem;
+        border: 0.4px solid lighten($primary-color, 10%);
+        padding: 0.5rem 0.7rem;
         justify-content: space-between;
         align-items: center;
         width: 40%;
+        border-radius: 5rem;
+
+        &:focus-within {
+            border-color: white;
+            @include transition-ease;
+        }
+
+        &:hover {
+            background-color: lighten($primary-color, 14%);
+            svg {
+                    fill: lighten($secondary-color, 15%);
+                }
+        }
 
         &-text {
             background-color: transparent;
@@ -69,6 +91,12 @@
         display: flex;
         list-style: none;
         gap: 1.5rem;
+        &-icons{
+            cursor: pointer;
+            &:hover{
+            color:lighten($secondary-color, 10%);
+        }
+        }
     }
 
     &_install {
@@ -76,6 +104,13 @@
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+        cursor: pointer;
+        &:hover{
+            color:lighten($secondary-color, 10%);
+            svg{
+                fill: darken($secondary-color, 10%);
+            }
+        }
 
         svg {
             width: 1.5rem;
@@ -88,6 +123,9 @@
         background: transparent;
         color: $secondary-color;
         @include button-style;
+        &:hover{
+            color:lighten($secondary-color, 10%);
+        }
     }
 
     &_button2 {
@@ -96,6 +134,11 @@
         height: 2.5rem;
         width: 5.5rem;
         border-radius: 2rem;
+        cursor: pointer;
         @include button-style;
+        &:hover{
+           background-color:darken($secondary-color, 10%);
+
+        }
     }
 }

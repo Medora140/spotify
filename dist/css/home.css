@@ -19,28 +19,47 @@
 }
 .nav_icon1-icons {
   list-style: none;
-  background-color: #333333;
+  background-color: rgb(30.6, 30.6, 30.6);
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .nav_icon1-icons svg {
   width: 1.5rem;
   height: 1.5rem;
   fill: white;
 }
+.nav_icon1-icons:hover {
+  background-color: rgb(38.25, 38.25, 38.25);
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+}
 .nav_search {
   display: flex;
   height: 100%;
   gap: 1rem;
   background-color: rgb(25.5, 25.5, 25.5);
-  padding: 0.5rem;
+  border: 0.4px solid rgb(25.5, 25.5, 25.5);
+  padding: 0.5rem 0.7rem;
   justify-content: space-between;
   align-items: center;
   width: 40%;
+  border-radius: 5rem;
+}
+.nav_search:focus-within {
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.nav_search:hover {
+  background-color: rgb(35.7, 35.7, 35.7);
+}
+.nav_search:hover svg {
+  fill: rgb(242.25, 242.25, 242.25);
 }
 .nav_search-text {
   background-color: transparent;
@@ -65,11 +84,24 @@
   list-style: none;
   gap: 1.5rem;
 }
+.nav_icon2-icons {
+  cursor: pointer;
+}
+.nav_icon2-icons:hover {
+  color: rgb(229.5, 229.5, 229.5);
+}
 .nav_install {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
+}
+.nav_install:hover {
+  color: rgb(229.5, 229.5, 229.5);
+}
+.nav_install:hover svg {
+  fill: rgb(178.5, 178.5, 178.5);
 }
 .nav_install svg {
   width: 1.5rem;
@@ -82,14 +114,21 @@
   border: none;
   outline: none;
 }
+.nav_button1:hover {
+  color: rgb(229.5, 229.5, 229.5);
+}
 .nav_button2 {
   background: #cccccc;
   color: black;
   height: 2.5rem;
   width: 5.5rem;
   border-radius: 2rem;
+  cursor: pointer;
   border: none;
   outline: none;
+}
+.nav_button2:hover {
+  background-color: rgb(178.5, 178.5, 178.5);
 }
 
 .main-section {
