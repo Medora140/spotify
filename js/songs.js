@@ -133,6 +133,13 @@ function createMusicPlayer(song, index) {
             </ul>
         </div>
     `;
+
+    const queueButton =
+        player.querySelector("#queue");
+
+    queueButton.addEventListener("click", () => {
+        toggleQueue();
+    });
     const playButton =
         player.querySelector(".play");
     const nextButton =
@@ -225,6 +232,7 @@ function createMusicPlayer(song, index) {
         const nextSong = currentSongs[currentIndex];
 
         createMusicPlayer(nextSong, currentIndex);
+        updateQueue();
     });
     prevButton.addEventListener("click", () => {
 
@@ -233,6 +241,7 @@ function createMusicPlayer(song, index) {
         const prevSong = currentSongs[currentIndex];
 
         createMusicPlayer(prevSong, currentIndex);
+        updateQueue();
     });
     volume.addEventListener("input", () => {
 

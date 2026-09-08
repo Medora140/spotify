@@ -994,6 +994,110 @@
   cursor: pointer;
 }
 
+.queue-card {
+  position: fixed;
+  right: 1rem;
+  bottom: 6rem;
+  width: 24rem;
+  max-height: 32rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: black;
+  color: #cccccc;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  z-index: 1000;
+  scrollbar-width: thin;
+  scrollbar-color: #cccccc transparent;
+}
+.queue-card::-webkit-scrollbar {
+  width: 6px;
+}
+.queue-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+.queue-card::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+.queue-card::-webkit-scrollbar-thumb:hover {
+  background: rgb(229.5, 229.5, 229.5);
+}
+.queue-card .queue-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.queue-card .queue-header h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+.queue-card .queue-header button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+.queue-card .queue-header button svg {
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+.queue-card .queue-header button:hover {
+  color: #cccccc;
+}
+.queue-card .description {
+  font-size: 0.7rem;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+.queue-card h3 {
+  font-size: 0.8rem;
+  margin: 0.8rem 0 0.7rem;
+}
+.queue-card .queue-song {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.35rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.queue-card .queue-song:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+.queue-card .queue-song img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.2rem;
+  flex-shrink: 0;
+}
+.queue-card .queue-song-info {
+  min-width: 0;
+  overflow: hidden;
+}
+.queue-card .queue-song-title {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.queue-card .queue-song-title.current {
+  color: #1abc54;
+}
+.queue-card .queue-song-artist {
+  margin-top: 0.2rem;
+  font-size: 0.65rem;
+  color: #cccccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 body {
   background-color: black;
   color: #cccccc;
