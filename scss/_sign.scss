@@ -25,10 +25,11 @@
             font-weight: 600;
             @include under;
         }
-        &-txt{
+
+        &-txt {
             @include under;
         }
-        
+
     }
 
     &-btn {
@@ -39,7 +40,8 @@
         @include button-style;
         background-color: $secondary-color;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             background-color: white;
         }
     }
@@ -76,15 +78,33 @@
 
 
         &-info {
+            width: 10rem;
+            white-space: nowrap;
+            overflow: hidden;
 
             h3 {
                 margin: 0;
                 font-size: 1rem;
+                animation: moveRight 14s linear infinite;
+                cursor: pointer;
+
+                &:hover {
+                    animation-play-state: paused;
+                    text-decoration: underline;
+                }
             }
 
             p {
                 margin: 0.3rem 0 0;
                 font-size: 0.85rem;
+                display: inline-block;
+                animation: moveRight 14s linear infinite;
+                cursor: pointer;
+
+                &:hover {
+                    animation-play-state: paused;
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -164,8 +184,9 @@
                 fill: darken($color: $secondary-color, $amount: 10%);
                 width: 1.5rem;
             }
-            &:hover{
-                svg{
+
+            &:hover {
+                svg {
                     fill: white;
                 }
             }
@@ -177,5 +198,16 @@
             }
 
         }
+    }
+}
+
+
+@keyframes moveRight {
+    from {
+        transform: translateX(40%);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }

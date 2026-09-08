@@ -547,13 +547,31 @@
      object-fit: cover;
   border-radius: 4px;
 }
+.sign .music-player-info {
+  width: 10rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .sign .music-player-info h3 {
   margin: 0;
   font-size: 1rem;
+  animation: moveRight 14s linear infinite;
+  cursor: pointer;
+}
+.sign .music-player-info h3:hover {
+  animation-play-state: paused;
+  text-decoration: underline;
 }
 .sign .music-player-info p {
   margin: 0.3rem 0 0;
   font-size: 0.85rem;
+  display: inline-block;
+  animation: moveRight 14s linear infinite;
+  cursor: pointer;
+}
+.sign .music-player-info p:hover {
+  animation-play-state: paused;
+  text-decoration: underline;
 }
 .sign .music-player-controls {
   display: flex;
@@ -624,6 +642,14 @@
   width: 100px;
 }
 
+@keyframes moveRight {
+  from {
+    transform: translateX(40%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .artist {
   width: 100%;
 }
